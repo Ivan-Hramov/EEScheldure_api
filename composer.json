@@ -1,0 +1,20 @@
+{
+    "name": "eescheldure/api",
+    "description": "EEScheldure API",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "5.6.x-dev",
+      "ext-pdo": "*",
+      "ext-curl": "*"
+    },
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Ivan Hramov"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [ "src/functions.php" ]
+    }
+}
