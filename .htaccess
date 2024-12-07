@@ -1,8 +1,8 @@
 RewriteEngine On
+Options -Indexes
 
-# Перенаправляем запросы к файлам и каталогам, которые не существуют
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Перехватываем все запросы и перенаправляем их на index.php
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule .* index.php [QSA,L]
+RewriteRule ^(.*)/(.*)/?$ index.php [NC,QSA]
